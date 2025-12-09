@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
     "target": "ES2020",
-    "strict": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "strict": true,
     "outDir": "dist",
-    "rootDir": "src"
+    "rootDir": "src",
+    "skipLibCheck": true
   }
 }
