@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
   const mode = req.query['hub.mode'];
-  const challenge = req.query['hub.challeng'];
+  const challenge = req.query['hub.challenge'];
   const token = req.query['hub.verify_token'];
 
   if (mode === 'subscribe' && token === process.env.VERIFY_TOKEN) {
